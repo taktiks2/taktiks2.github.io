@@ -1,16 +1,204 @@
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8" />
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1" /> -->
     <title>Sample</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header>
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </header>
     <main>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
+      <h1 id="page-title">タイトル</h1>
+      <div>
+        <h2>position</h2>
+        <div class="container">
+          <div class="child-base c1">absolute</div>
+          <div class="child-base c2">relative</div>
+          <div class="child-base c3">fixed</div>
+        </div>
+      </div>
+      <div>
+        <h2>flex</h2>
+        <div class="container flex-container">
+          <div class="child-base"></div>
+          <div class="child-base"></div>
+          <div class="child-base"></div>
+          <div class="child-base"></div>
+          <div class="child-base"></div>
+          <div class="child-base"></div>
+        </div>
+      </div>
+      <div>
+        <h2>grid</h2>
+        <div class="container grid-container">
+          <div class="child-base"></div>
+          <div class="child-base"></div>
+          <div class="child-base"></div>
+          <div class="child-base"></div>
+          <div class="child-base"></div>
+          <div class="child-base"></div>
+          <div class="child-base"></div>
+          <div class="child-base"></div>
+          <div class="child-base"></div>
+        </div>
+      </div>
+      <div>
+        <h2>style練習</h2>
+        <div class="section1">
+          <p>文字列</p>
+          <p>文字列</p>
+          <p>文字列</p>
+          <p>文字列</p>
+          <p>文字列</p>
+          <p>文字列</p>
+        </div>
+        <div class="section2">
+          <div>文字列</div>
+          <div>文字列</div>
+          <div>文字列</div>
+          <div>test1<div>test2</div></div>
+        </div>
+        <div class="section3">
+          <div>文字列</div>
+          <div>文字列</div>
+          <div>文字列</div>
+          <div>test1<div>test2</div></div>
+        </div>
+      </div>
+      <div>
+        <h2>form</h2>
+        <form action="" method="get">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" />
+          </div>
+          <div>
+            <label for="check">Checkbox</label>
+            <input type="checkbox" name="character" value="jake">ジェイク</input>
+            <input type="checkbox" name="character" value="fin">フィン</input>
+            <input type="checkbox" name="character" value="bmo">BMO</input>
+          </div>
+          <div>
+            <label for="select">Select</label>
+            <select>
+              <option value="1">ジェイク</option>
+              <option value="2">フィン</option>
+              <option value="3">BMO</option>
+            </select>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div>
+        <h2>iframe</h2>
+        <iframe src="https://example.com" width="100%" height="200px"></iframe>
+      </div>
+      <div>
+        <h2>画像(img)</h2>
+        <figure>
+          <img src="./bmo.png" alt="BMO" width="300px" />
+          <img src="./bmo.png" alt="BMO" width="300px" />
+          <img src="./bmo.png" alt="BMO" width="300px" />
+          <figcaption>BMO</figcaption>
+        </figure>
+      </div>
+      <div>
+        <h2>動画(video)</h2>
+        <video autoplay controls loop>
+          <source src="./earth.mp4" type="video/mp4" />
+          <p>動画が表示されないときに表示する文言</p>
+        </video>
+      </div>
+      <div>
+        <h2>オーディオ(audio)</h2>
+        <audio controls loop>
+          <source src="./sample.mp3" type="audio/mpeg" />
+          <p>MP3に未対応です</p>
+        </audio>
+      </div>
+      <div>
+        <h2>順序なしリスト(ul, li)</h2>
+        <ul>
+          <li>要素1</li>
+          <li>要素2</li>
+          <li>要素3</li>
+        </ul>
+      </div>
+      <div>
+        <h2>順序ありリスト(ll, li)</h2>
+        <ol>
+          <li>要素1</li>
+          <li>要素2</li>
+          <li>要素3</li>
+        </ol>
+      </div>
+      <div>
+        <h2>説明リスト(dl, dt, dd)</h2>
+        <dl>
+          <dt>項目1</dt>
+          <dd>説明1</dd>
+          <dt>項目2</dt>
+          <dd>説明2-1</dd>
+          <dd>説明2-2</dd>
+          <dd>説明2-3</dd>
+          <dt>項目3</dt>
+          <dd>説明3</dd>
+        </dl>
+      </div>
+      <div>
+        <h2>テーブル</h2>
+        <table>
+          <tr>
+            <th>見出し1</th>
+            <th>見出し2</th>
+            <th>見出し3</th>
+          </tr>
+          <tr>
+            <td>セル1-1</td>
+            <td>セル1-2</td>
+            <td>セル1-3</td>
+          </tr>
+          <tr>
+            <td>セル2-1</td>
+            <td>セル2-2</td>
+            <td>セル2-3</td>
+          </tr>
+          <tr>
+            <td>セル3-1</td>
+            <td>セル3-2</td>
+            <td>セル3-3</td>
+          </tr>
+        </table>
+      </div>
+      <div>
+        <p>↓ hr tag</p>
+        <hr />
+        <p>This is <strong>strong tag</strong></p>
+        <p>This is <mark>mark tag</mark></p>
+        <a href="#">Go to top</a>
+        <br />
+        <a href="#" target="_blank" rel="noopener">Open another tab</a>
+        <p>
+          <span>span1</span>
+          <span>span2</span>
+          <br />
+          <span>span3</span>
+          <span>span4</span>
+        </p>
+      </div>
     </main>
     <script type="text/javascript" src="script.js"></script>
   </body>
